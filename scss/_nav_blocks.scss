@@ -1,0 +1,36 @@
+.sub-page.block {
+  text-align: left;
+  width: 24.7%;
+  min-width: 100px;
+
+  display: inline-flex;
+  align-items: flex-start;
+  flex: 1 1 25%;
+  padding: 3rem 2rem 2rem 3rem;
+  @media only screen and (max-width: 1200px) {
+    padding: 2rem;
+  }
+  @media only screen and (max-width: 1000px) {
+    width: 49%;
+  }
+  @media only screen and (max-width: 750px) {
+    padding: 1rem;
+    width: 100%;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  &:nth-child(1) {
+    background: linear-gradient(to right, rgba(27, 159, 214, 0.8) 0%, rgba(27, 159, 214, 0.8) 100%), url("../img/hero.jpg") center center / cover no-repeat;
+  }
+  &:nth-child(2) {
+    background: linear-gradient(to right, rgba(27, 159, 214, 0.8) 0%, rgba(27, 159, 214, 0.8) 100%), url("../img/hero.jpg") center center / cover no-repeat;
+  }
+  &:nth-child(3) {
+    background: linear-gradient(to right, rgba(27, 159, 214, 0.8) 0%, rgba(27, 159, 214, 0.8) 100%), url("../img/hero.jpg") center center / cover no-repeat;
+  }
+  &:nth-child(4) {
+    background: linear-gradient(to right, rgba(27, 159, 214, 0.8) 0%, rgba(27, 159, 214, 0.8) 100%), url("../img/hero.jpg") center center / cover no-repeat;
+    //min-width: 30%;
+  }
+}

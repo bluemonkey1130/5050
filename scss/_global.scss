@@ -1,0 +1,123 @@
+:root {
+  --black: #1F1F1F;
+  --true-black: #000000;
+}
+
+section, header, footer {
+  width: 100%;
+  box-sizing: border-box;
+  .inner_wrapper {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    &.row {
+      display: inline-flex;
+    }
+  }
+  .block, figure {
+    vertical-align: top;
+    box-sizing: border-box;
+    display: inline-block;
+    .inner_block {
+      box-sizing: border-box;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.constrain {
+  max-width: calc(100% - calc(100% - 1600px));
+  margin: auto;
+  padding: 0 3em;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  section.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    z-index: 20;
+    .inner_wrapper {
+      width: auto;
+      display: inline-block;
+      .block {
+        max-width: 250px;
+      }
+    }
+  }
+}
+
+section.main {
+  background-color: var(--black);
+
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  @media only screen and (min-width: 1000px) {
+    padding-left: 5rem;
+  }
+  * {
+    color: white;
+  }
+}
+
+.top_row {
+  width: 100%;
+  display: inline-flex;
+  min-height: 600px;
+  @media only screen and (min-width: 1000px) {
+    height: 75vh;
+  }
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column
+  }
+}
+
+.bottom_row {
+  width: 100%;
+  display: inline-flex;
+  min-height: 100px;
+  @media only screen and (min-width: 1000px) {
+    height: 20vh;
+  }
+}
+
+section.foot {
+  background-color: black;
+  width: 100vw;
+  * {
+    color: white;
+  }
+  .ticker {
+    display: inline-flex;
+    height: 5vh;
+    border-left: 5px solid blue;
+    padding-left: 1rem;
+    box-sizing: content-box;
+    overflow-x: scroll;
+    .block {
+
+      width: auto;
+      margin-right: 20px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 120px;
+      h6 {
+        margin: 0;
+        padding-right: 20px;
+        border-right: 2px solid white;
+      }
+    }
+  }
+}

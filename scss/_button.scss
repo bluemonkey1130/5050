@@ -1,0 +1,33 @@
+a.button-primary, span.button-primary > a, input[type=submit] {
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 500px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  background: $brand-one;
+  margin: 0.5rem 0 0 0;
+
+  &:hover {
+    background-color: $brand-six;
+    color: $white;
+  }
+  &:active {
+    background-color: $brand-two;
+    color: $white;
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 15px 25px;
+  }
+
+}
+input[type=submit]{
+  width: auto;
+  float: right;
+  border: none;
+}
