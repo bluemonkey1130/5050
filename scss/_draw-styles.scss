@@ -9,6 +9,11 @@
   @media only screen and (max-width: 1000px) {
     width: 100%;
     flex-direction: row;
+
+  }
+  @media only screen and (max-width: 650px) {
+    flex-direction: column;
+
   }
   *:not(a) {
     margin: 0;
@@ -30,7 +35,7 @@
 }
 
 .block .inner_top {
-  background-color: var(--black);
+  background-color: $black;
   flex: 1 1 25%;
 
   h4 {
@@ -40,7 +45,7 @@
 
 .block .inner_mid {
   flex: 1 1 45%;
-  background-color: var(--true-black);
+  background-color: $true-black;
   h3 {
     text-transform: uppercase;
   }
@@ -59,5 +64,5 @@
 
 .block .inner_bottom {
   flex: 1 1 30%;
-  background-color: var(--black);
+  background-color: $black;
 }

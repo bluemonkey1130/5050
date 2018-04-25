@@ -3,6 +3,10 @@
   --true-black: #000000;
 }
 
+$black: #1F1F1F;
+$true-black: #000000;
+$brand-one: rgb(27, 159, 214);
+
 section, header, footer {
   width: 100%;
   box-sizing: border-box;
@@ -58,55 +62,68 @@ body {
 }
 
 section.main {
-  background-color: var(--black);
-
+  background-color: $black;
   display: inline-flex;
   flex-direction: column;
   width: 100%;
-  @media only screen and (min-width: 1000px) {
-    padding-left: 5rem;
-  }
+
   * {
     color: white;
   }
 }
 
-.top_row {
-  width: 100%;
-  display: inline-flex;
-  min-height: 600px;
-  @media only screen and (min-width: 1000px) {
-    height: 75vh;
+section.main {
+  .top_row {
+    width: 100%;
+    display: inline-flex;
+    min-height: 500px;
+    @media only screen and (min-width: 1000px) {
+      height: 75vh;
+
+    }
+    @media only screen and (max-width: 1000px) {
+      flex-direction: column
+    }
   }
-  @media only screen and (max-width: 1000px) {
-    flex-direction: column
+
+  .bottom_row {
+    width: 100%;
+    display: inline-flex;
+    min-height: 100px;
+    padding: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media only screen and (min-width: 750px) {
+      flex-direction: row;
+
+    }
+    @media only screen and (min-width: 1000px) {
+      height: 15vh;
+      //padding-left: 120px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+
+    }
   }
 }
 
-.bottom_row {
-  width: 100%;
-  display: inline-flex;
-  min-height: 100px;
-  @media only screen and (min-width: 1000px) {
-    height: 20vh;
-  }
-}
-
-section.foot {
-  background-color: black;
-  width: 100vw;
-  * {
-    color: white;
-  }
-  .ticker {
+footer {
+  height: 10vh;
+  .inner_wrapper.ticker {
+    background-color: $true-black;
+    width: 100vw;
     display: inline-flex;
     height: 5vh;
-    border-left: 5px solid blue;
+    border-left: 5px solid $brand-one;
     padding-left: 1rem;
     box-sizing: content-box;
     overflow-x: scroll;
+    * {
+      color: white;
+    }
     .block {
-
       width: auto;
       margin-right: 20px;
       display: inline-flex;
@@ -118,6 +135,18 @@ section.foot {
         padding-right: 20px;
         border-right: 2px solid white;
       }
+    }
+
+  }
+  .inner_wrapper.footer-nav {
+    background-color: $black;
+    text-align: center;
+    .block {
+      padding: 0.2rem;
+    }
+    .block.nav {
+    }
+    .block.copy {
     }
   }
 }
