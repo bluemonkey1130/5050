@@ -1,7 +1,10 @@
 var gulp = require('gulp')
 sass = require('gulp-sass'),
     plumber = require('gulp-plumber'),
-    prefix = require('gulp-autoprefixer');
+    prefix = require('gulp-autoprefixer'),
+    cssmin      = require('gulp-cssnano'),
+    rename      = require('gulp-rename');
+
 
 
 var onError = function (err) {
@@ -29,6 +32,7 @@ gulp.task('sass', function () {
         .pipe(plumber({errorHandler: onError}))
         .pipe(sass(sassOptions)) // Converts Sass to CSS with gulp-sass
         .pipe(prefix(prefixerOptions))
-
+        .pipe(cssmin())
+        .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))
 });

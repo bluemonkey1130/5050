@@ -1,11 +1,14 @@
-.block.draw.step-one {
+.block.draw {
+  flex-direction: column;
   text-align: center;
   width: 30%;
   min-width: 250px;
   display: inline-flex;
-  flex-direction: column;
   justify-content: space-between;
   flex: 1 1 30%;
+}
+
+.block.step-one {
   @media only screen and (max-width: 1000px) {
     width: 100%;
     flex-direction: row;
@@ -32,37 +35,53 @@
       width: 100%;
     }
   }
-}
+  .inner_top {
+    background-color: $black;
+    flex: 1 1 25%;
 
-.block .inner_top {
-  background-color: $black;
-  flex: 1 1 25%;
-
-  h4 {
+    h4 {
+    }
   }
-
-}
-
-.block .inner_mid {
-  flex: 1 1 45%;
-  background-color: $true-black;
-  h3 {
-    text-transform: uppercase;
-  }
-  .verses {
-    img {
-      display: inline-block;
-      max-width: 100px;
-      @media only screen and (min-width: 900px) {
+  .inner_mid {
+    flex: 1 1 45%;
+    background-color: $true-black;
+    h3 {
+      text-transform: uppercase;
+    }
+    .verses {
+      img {
+        display: inline-block;
+        max-width: 100px;
+        @media only screen and (min-width: 900px) {
+        }
+      }
+      p, h1, h2, h3, h4, h5, h6 {
+        display: inline-block;
       }
     }
-    p, h1, h2, h3, h4, h5, h6 {
-      display: inline-block;
-    }
+  }
+  .inner_bottom {
+    flex: 1 1 30%;
+    background-color: $black;
   }
 }
 
-.block .inner_bottom {
-  flex: 1 1 30%;
-  background-color: $black;
+.block.step-two {
+  & >div{
+    padding: 1rem;
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 30%;
+  }
+  .inner_top {
+  }
+  .inner_mid {
+  }
+  .inner_bottom {
+  }
 }
+
+
+

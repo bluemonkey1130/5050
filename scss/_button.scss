@@ -1,4 +1,4 @@
-a.button-primary, span.button-primary > a, input[type=submit] {
+.button-primary, input[type=submit] {
   padding: 10px 20px;
   display: inline-block;
   font-size: 1em;
@@ -12,14 +12,19 @@ a.button-primary, span.button-primary > a, input[type=submit] {
   transition-timing-function: ease-in-out;
   background: $brand-one;
   margin: 0.5rem 0 0 0;
-
+  border: none;
   &:hover {
-    background-color: $brand-six;
+    background-color: $brand-two;
     color: $white;
   }
   &:active {
-    background-color: $brand-two;
+    background-color: $brand-six;
+    color: $white;  }
+
+  &:focus{
+    background-color: $brand-six;
     color: $white;
+    outline: none;
   }
   @media only screen and (max-width: 768px) {
     padding: 15px 25px;
@@ -30,4 +35,42 @@ input[type=submit]{
   width: auto;
   float: right;
   border: none;
+}
+input[type=number]{
+  width: 130px;
+  color: $white;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $white;
+
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $white;
+}
+
+
+
+.button-primary.choices{
+  background: $grey;
+  margin: 0.5rem 0 0 0;
+  border: none;
+  &:hover {
+    background-color: $brand-one;
+    color: $white;
+  }
+  &:active {
+    background-color: $brand-six;
+    color: $white;  }
+
+  &:focus{
+    background-color: $brand-one;
+    color: $white;
+    outline: none;
+  }
 }

@@ -1,5 +1,5 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,21 +12,16 @@
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.min.css">
 </head>
 <body>
-
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-    your browser</a> to improve your experience and security.</p>
-<![endif]-->
 
 
 <section class="logo">
     <div class="inner_wrapper">
         <div class="block">
-            <img src="img/logo-newcastle.png">
+            <img src="../img/logo-newcastle.png">
         </div>
     </div>
 </section>
@@ -50,25 +45,29 @@
 
         </div>
         <!--DRAW-STYLES.SCSS-->
-        <div class="block draw step-one">
+        <div class="block draw step-two">
             <div class="inner_top">
-                <h4>Last Draw</h4>
-                <h1>£8,012</h1>
-                <h6>See Winning Numbers</h6>
+                <h3>POT AMOUNT £2,455</h3>
+                <h3>Draw closes in: 2D 20:10:12</h3>
             </div>
             <div class="inner_mid">
-                <h3>Draw closes in: 2D 20:10:12</h3>
-                <div class="verses">
-                    <img src="img/newcastle.png">
-                    <h6>VS</h6>
-                    <img src="img/southampton.png">
+                <h2>Choose your number of tickets</h2>
+                <h4>£2 per ticket</h4>
+                <div class="options-wrap">
+                    <button class="button-primary choices" type="button">1 ticket</button>
+                    <button class="button-primary choices" autofocus type="button">2 tickets</button>
+                    <button class="button-primary choices" type="button">5 tickets</button>
+                    <button class="button-primary choices" type="button">10 tickets</button>
+                    <input  class="button-primary choices" placeholder="Other" type="number" name="quantity" min="1">
                 </div>
             </div>
             <div class="inner_bottom">
-                <h3>POT AMOUNT £2,455</h3>
-                <h4>£2 PER TICKET</h4>
-                <a class="button-primary" href="/steps/step-one.html">PLAY NOW&nbsp;&gt;</a>
+                <a class="button-primary" href="">£4 : Instant play&nbsp;&gt;</a>
+                <a class="button-primary" >Or Subscribe for multiplay&nbsp;&gt;</a>
+                <h6><a href="">Autoplay & Exclusive Benefits</a></h6>
             </div>
+
+
         </div>
     </div>
     <div class="inner_wrapper bottom_row">
@@ -131,24 +130,14 @@
 </footer>
 
 
-<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="../js/vendor/modernizr-3.5.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-<script src="js/vendor/jquery.steps.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+<script src="..js/vendor/jquery.steps.min.js"></script>
+<script src="..js/plugins.js"></script>
+<script src="..js/main.js"></script>
 
-<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-<script>
-    window.ga = function () {
-        ga.q.push(arguments)
-    };
-    ga.q = [];
-    ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('send', 'pageview')
-</script>
-<script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 </html>
