@@ -302,21 +302,6 @@ footer {
     footer .inner_wrapper.footer-nav .block {
       padding: 0.2rem; }
 
-.ui.steps {
-  display: inline-flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: center;
-  margin: 1em 0;
-  box-shadow: none;
-  line-height: 1.14285714em;
-  border-radius: .28571429rem;
-  border: 1px solid rgba(34, 36, 38, 0.15);
-  cursor: auto;
-  background: #f3f4f5;
-  padding: 1rem;
-  text-align: left; }
-
 .ticker {
   overflow: hidden;
   position: relative; }
@@ -596,10 +581,14 @@ h1 {
 
 h2 {
   font-size: 1.7857142857rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 400; }
   h2 strong {
     font-size: 1.7857142857rem;
     font-weight: 800; }
+  h2 + p {
+    font-size: 1.1363636364rem;
+    margin: 12px 0 14.4px 0; }
 
 h3 {
   font-size: 1.6666666667rem;
@@ -738,6 +727,8 @@ input[type=number] {
   @media only screen and (max-width: 1000px) {
     .block.draw {
       width: 100%; } }
+  .block.draw > div {
+    padding: 1rem; }
 
 @media only screen and (max-width: 1000px) {
   .block.home {
@@ -748,7 +739,6 @@ input[type=number] {
 .block.home *:not(a) {
   margin: 0; }
 .block.home > div {
-  padding: 1rem;
   display: inherit;
   flex-direction: column;
   justify-content: center;
@@ -801,7 +791,6 @@ input[type=number] {
       order: 1; } }
 
 .block.step-one > div {
-  padding: 1rem;
   display: inherit;
   flex-direction: column;
   justify-content: center;
@@ -821,6 +810,22 @@ input[type=number] {
 
 .block.step-three > div {
   flex: 1 1 30%; }
+
+.block.step-four > div {
+  flex: 1 1 30%; }
+.block.step-four .inner_mid {
+  display: inherit;
+  flex-direction: column; }
+  .block.step-four .inner_mid button {
+    background: #1B9FD6;
+    padding: 0.5rem;
+    border-radius: 60%; }
+    .block.step-four .inner_mid button:before {
+      color: #ffffff; }
+  .block.step-four .inner_mid hr {
+    margin: auto auto 0 auto;
+    width: 90%;
+    justify-self: center; }
 
 .block.hero {
   padding: 2rem 6rem 2rem 2rem;
