@@ -12,6 +12,9 @@
         padding: 0 0 0 0.25rem;
 
       }
+      &:before{
+        color: $brand-one;
+      }
     }
   }
   @media only screen and (max-width: 1000px) {

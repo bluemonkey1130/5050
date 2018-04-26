@@ -36,17 +36,28 @@
     }
   }
   .inner_top {
-    background-color: $black;
+    background-color: $white;
     flex: 1 1 25%;
-
     h4 {
+      color: $brand-one;
+    }
+    h1{
+      color: $brand-one;
+    }
+    a{
+      color: $black;
     }
   }
   .inner_mid {
     flex: 1 1 45%;
-    background-color: $true-black;
+    background: linear-gradient(to right, rgba(27, 159, 214, 0.8) 0%, rgba(27, 159, 214, 0.8) 100%), url("../img/hero.jpg") center center / cover no-repeat;
+
     h3 {
-      text-transform: uppercase;
+
+    }
+
+    *{
+      color: $white;
     }
     .verses {
       img {
@@ -62,7 +73,10 @@
   }
   .inner_bottom {
     flex: 1 1 30%;
-    background-color: $black;
+    background-color: $white;
+    *:not(a){
+      color: $black;
+    }
   }
 }
 

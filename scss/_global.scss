@@ -4,6 +4,7 @@
 }
 
 $black: #1F1F1F;
+$white: #fffff;
 $true-black: #000000;
 $brand-one: rgb(27, 159, 214);
 $grey: #8E8E8E;
@@ -63,14 +64,11 @@ body {
 }
 
 section.main {
-  background-color: $black;
+  background-color: $white;
   display: inline-flex;
   flex-direction: column;
   width: 100%;
 
-  * {
-    color: white;
-  }
 }
 
 section.main {
@@ -113,16 +111,17 @@ section.main {
 footer {
   height: 10vh;
   .inner_wrapper.ticker {
-    background-color: $true-black;
+    background-color: $white;
     width: 100vw;
     display: inline-flex;
     height: 5vh;
     border-left: 5px solid $brand-one;
+    border-bottom: 1px solid $brand-one;
     padding-left: 1rem;
     box-sizing: content-box;
     overflow-x: scroll;
     * {
-      color: white;
+      color: $black;
     }
     .block {
       width: auto;
@@ -134,13 +133,13 @@ footer {
       h6 {
         margin: 0;
         padding-right: 20px;
-        border-right: 2px solid white;
+        border-right: 2px solid $black;
       }
     }
 
   }
   .inner_wrapper.footer-nav {
-    background-color: $black;
+    background-color: $white;
     text-align: center;
     .block {
       padding: 0.2rem;

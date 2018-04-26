@@ -8,7 +8,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 html {
   color: #222;
   font-size: 1em;
@@ -274,12 +274,10 @@ body {
         max-width: 250px; }
 
 section.main {
-  background-color: #1F1F1F;
+  background-color: #fffff;
   display: inline-flex;
   flex-direction: column;
   width: 100%; }
-  section.main * {
-    color: white; }
 
 section.main .top_row {
   width: 100%;
@@ -310,16 +308,17 @@ section.main .bottom_row {
 footer {
   height: 10vh; }
   footer .inner_wrapper.ticker {
-    background-color: #000000;
+    background-color: #fffff;
     width: 100vw;
     display: inline-flex;
     height: 5vh;
     border-left: 5px solid #1b9fd6;
+    border-bottom: 1px solid #1b9fd6;
     padding-left: 1rem;
     box-sizing: content-box;
     overflow-x: scroll; }
     footer .inner_wrapper.ticker * {
-      color: white; }
+      color: #1F1F1F; }
     footer .inner_wrapper.ticker .block {
       width: auto;
       margin-right: 20px;
@@ -330,9 +329,9 @@ footer {
       footer .inner_wrapper.ticker .block h6 {
         margin: 0;
         padding-right: 20px;
-        border-right: 2px solid white; }
+        border-right: 2px solid #1F1F1F; }
   footer .inner_wrapper.footer-nav {
-    background-color: #1F1F1F;
+    background-color: #fffff;
     text-align: center; }
     footer .inner_wrapper.footer-nav .block {
       padding: 0.2rem; }
@@ -914,28 +913,47 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
   font-family: "Montserrat", sans-serif;
   line-height: 1.25em;
-  font-weight: 800; }
+  font-weight: 700; }
 
 h1 {
-  font-size: 2.5rem;
-  font-weight: 700; }
+  font-size: 3rem;
+  text-transform: uppercase; }
+  h1 strong {
+    font-size: 2.5rem;
+    font-weight: 800; }
 
 h2 {
   font-size: 1.7857142857rem;
-  font-weight: 500; }
+  text-transform: uppercase; }
+  h2 strong {
+    font-size: 1.7857142857rem;
+    font-weight: 800; }
 
 h3 {
   font-size: 1.6666666667rem;
-  font-weight: 300; }
+  font-weight: 400;
+  text-transform: uppercase; }
+  h3 strong {
+    font-size: 1.6666666667rem;
+    font-weight: 800; }
 
 h4 {
-  font-size: 1.3888888889rem; }
+  font-size: 1.3157894737rem;
+  font-weight: 400;
+  text-transform: uppercase; }
+  h4 strong {
+    font-size: 1.3157894737rem;
+    font-weight: 800; }
 
 h5 {
-  font-size: 1.3157894737rem; }
+  font-size: 1.25rem; }
 
-h6 {
-  font-size: 0.7142857143rem; }
+h6, h6 a {
+  font-size: 0.7142857143rem;
+  font-weight: 400; }
+  h6 strong, h6 a strong {
+    font-size: 0.7142857143rem;
+    font-weight: 800; }
 
 p {
   margin-top: 10px;
@@ -976,12 +994,13 @@ ul, ol {
   transition-timing-function: ease-in-out;
   background: #1B9FD6;
   margin: 0.5rem 0 0 0;
-  border: none; }
+  border: none;
+  color: #ffffff; }
   .button-primary:hover, input[type=submit]:hover {
     background-color: #A1DAF8;
     color: #ffffff; }
   .button-primary:active, input[type=submit]:active {
-    background-color: #F7A700;
+    background-color: #A1DAF8;
     color: #ffffff; }
   .button-primary:focus, input[type=submit]:focus {
     background-color: #F7A700;
@@ -1024,7 +1043,7 @@ input[type=number] {
     background-color: #1B9FD6;
     color: #ffffff; }
   .button-primary.choices:active {
-    background-color: #F7A700;
+    background-color: #1B9FD6;
     color: #ffffff; }
   .button-primary.choices:focus {
     background-color: #1B9FD6;
@@ -1062,13 +1081,19 @@ input[type=number] {
     .block.step-one > div {
       width: 100%; } }
 .block.step-one .inner_top {
-  background-color: #2b2b2b;
+  background-color: #ffffff;
   flex: 1 1 25%; }
+  .block.step-one .inner_top h4 {
+    color: #1B9FD6; }
+  .block.step-one .inner_top h1 {
+    color: #1B9FD6; }
+  .block.step-one .inner_top a {
+    color: #2b2b2b; }
 .block.step-one .inner_mid {
   flex: 1 1 45%;
-  background-color: #000000; }
-  .block.step-one .inner_mid h3 {
-    text-transform: uppercase; }
+  background: linear-gradient(to right, rgba(27, 159, 214, 0.8) 0%, rgba(27, 159, 214, 0.8) 100%), url("../img/hero.jpg") center center/cover no-repeat; }
+  .block.step-one .inner_mid * {
+    color: #ffffff; }
   .block.step-one .inner_mid .verses img {
     display: inline-block;
     max-width: 100px; }
@@ -1076,7 +1101,9 @@ input[type=number] {
     display: inline-block; }
 .block.step-one .inner_bottom {
   flex: 1 1 30%;
-  background-color: #2b2b2b; }
+  background-color: #ffffff; }
+  .block.step-one .inner_bottom *:not(a) {
+    color: #2b2b2b; }
 
 .block.step-two > div {
   padding: 1rem;
@@ -1094,7 +1121,7 @@ input[type=number] {
   align-items: flex-start;
   flex-direction: column;
   flex: 1 1 60%;
-  background: linear-gradient(to bottom, black 0%, rgba(255, 255, 255, 0.03) 32%, rgba(255, 255, 255, 0) 33%, rgba(255, 255, 255, 0) 68%, black 100%), url("../img/hero.jpg") center center/cover no-repeat;
+  background: url("../img/hero.jpg") center center/cover no-repeat;
   background-blend-mode: multiply; }
   @media only screen and (min-width: 1000px) {
     .block.hero {
@@ -1104,7 +1131,8 @@ input[type=number] {
       width: 100%;
       padding: 9rem 6rem 2rem 2rem; } }
   .block.hero * {
-    width: 100%; }
+    width: 100%;
+    color: #ffffff; }
   .block.hero h1 {
     margin-bottom: 0; }
   .block.hero h3 {
@@ -1118,6 +1146,8 @@ input[type=number] {
   align-items: flex-start;
   flex: 1 1 25%;
   padding: 2rem 1.5rem 1.5rem 3rem; }
+  .sub-page.block * {
+    color: #ffffff; }
   @media only screen and (max-width: 1200px) {
     .sub-page.block {
       padding: 2rem; } }
@@ -1153,6 +1183,8 @@ input[type=number] {
       border-bottom: 1px solid white; }
       .block.side_bar ul li a {
         padding: 0 0 0 0.25rem; }
+      .block.side_bar ul li:before {
+        color: #1B9FD6; }
   @media only screen and (max-width: 1000px) {
     .block.side_bar {
       padding: 0 1rem 0 15rem;
@@ -1175,7 +1207,7 @@ input[type=number] {
       list-style: none;
       display: inline-block; }
       .footer-nav nav.block ul li a {
-        color: #ffffff;
+        color: #2b2b2b;
         font-size: 0.7142857143rem;
         padding-right: 0.5rem; }
         .footer-nav nav.block ul li a:after {
@@ -1187,6 +1219,6 @@ input[type=number] {
   width: 100%; }
   .footer-nav .block.copy h6 {
     margin: 0;
-    color: #ffffff; }
+    color: #2b2b2b; }
 
 /*# sourceMappingURL=main.css.map */

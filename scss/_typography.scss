@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 // PX to REM - Usage: font-size: rem(37px);
 @function rem($px, $base: $base-font-size) {
@@ -58,8 +58,6 @@ $hr-margin: 30px;
 $font-weight-bold: 600;
 $border-color: #DADADA;
 
-
-
 /*------------------------------------*\
     # Type
 \*------------------------------------*/
@@ -80,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   color: $header-color;
   font-family: $header-font-family;
   line-height: $header-line-height;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 // Heading One Styles
@@ -94,8 +92,12 @@ h1, h2, h3, h4, h5, h6 {
 //
 // Styleguide typography.heading-one
 h1 {
-  font-size: $header-size;
-  font-weight: 700;
+  font-size: $header-size*1.2;
+  text-transform: uppercase;
+  strong {
+    font-size: $header-size;
+    font-weight: 800;
+  }
 }
 
 //h1 + p,
@@ -115,7 +117,13 @@ h1 {
 // Styleguide typography.heading-two
 h2 {
   font-size: $header-size / 1.4;
-  font-weight: 500;
+  text-transform: uppercase;
+
+  strong {
+    font-size: $header-size / 1.4;
+    font-weight: 800;
+
+  }
 }
 
 // Heading Three Styles
@@ -130,9 +138,15 @@ h2 {
 // Styleguide typography.heading-three
 h3 {
   font-size: $header-size / 1.5;
-  font-weight: 300;
-}
+  font-weight: 400;
+  text-transform: uppercase;
 
+  strong {
+    font-size: $header-size / 1.5;
+    font-weight: 800;
+
+  }
+}
 
 // Heading Four Styles
 //
@@ -145,9 +159,15 @@ h3 {
 //
 // Styleguide typography.heading-four
 h4 {
-  font-size: $header-size / 1.8;
-}
+  font-size: $header-size / 1.9;
+  font-weight: 400;
+  text-transform: uppercase;
 
+  strong {
+    font-size: $header-size / 1.9;
+    font-weight: 800;
+  }
+}
 
 // Heading Text
 //
@@ -158,7 +178,7 @@ h4 {
 //
 // Styleguide typography.heading-five
 h5 {
-  font-size: $header-size / 1.9;
+  font-size: $header-size / 2;
 }
 
 // Heading Six Styles
@@ -171,10 +191,14 @@ h5 {
 // <h6>Heading Six</h6>
 //
 // Styleguide typography.heading-six
-h6 {
+h6, h6 a {
   font-size: $header-size / 3.5;
+  font-weight: 400;
+  strong {
+    font-size: $header-size / 3.5;
+    font-weight: 800;
+  }
 }
-
 
 // Paragraphs
 p {

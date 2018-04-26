@@ -13,13 +13,15 @@
   align-items: flex-start;
   flex-direction: column;
   flex: 1 1 60%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0.03) 32%, rgba(255, 255, 255, 0) 33%, rgba(255, 255, 255, 0) 68%, rgba(0, 0, 0, 1) 100%), url("../img/hero.jpg") center center / cover no-repeat;
+  background:  url("../img/hero.jpg") center center / cover no-repeat;
   background-blend-mode: multiply;
   *{
     width: 100%;
+    color: $white;
   }
   h1 {
     margin-bottom: 0;
+
   }
   h3 {
     margin-bottom: 0;
