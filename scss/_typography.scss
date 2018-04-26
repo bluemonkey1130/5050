@@ -120,15 +120,18 @@ h2 {
   text-transform: uppercase;
   font-weight: 400;
 
-
   strong {
     font-size: $header-size / 1.4;
     font-weight: 800;
 
   }
-  & + p{
+  & + p {
     font-size: $header-size / 2.2;
     margin: $header-margin 0 $header-margin * 1.2 0;
+
+  }
+  @media only screen and (max-width: 1200px) {
+    font-size: $header-size / 1.6;
 
   }
 }

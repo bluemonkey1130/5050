@@ -45,6 +45,26 @@
                     <li class="fas fa-user-plus"><a href="sub-pages/account.html">Account</a></li>
                 </ul>
             </nav>
+            <button class="mobile_button fas fa-bars" onclick="openNav()"></button>
+
+            <section id="mySidenav" class="sidenav">
+                <nav>
+
+                    <button href="javascript:void(0)" class="closebtn fas fa-times" onclick="closeNav()"></button>
+
+                </nav>
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "250px";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
+            </section>
+
+
         </header>
         <!--HERO.SCSS-->
         <div class="block hero"

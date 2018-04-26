@@ -75,12 +75,17 @@
       p, h1, h2, h3, h4, h5, h6 {
         display: inline-block;
       }
+      @media only screen and (max-width: 600px) {
+        display: inherit;
+        flex-direction: column;
+      }
     }
     @media only screen and (max-width: 1000px) {
       flex: 1 1 50%;
       width: 50%;
       order: 2;
     }
+
   }
   .inner_bottom {
     flex: 1 1 30%;
@@ -118,6 +123,10 @@
     h2 {
       color: $brand-one;
     }
+    input[type=number] {
+      width: 130px;
+      color: $white;
+    }
   }
   .inner_bottom {
     flex: 1 1 25%;
@@ -126,13 +135,17 @@
 }
 
 .block.step-two {
+  form{
+    margin-top: 0.5rem;
 
+  }
 }
 
 .block.step-three {
   & > div {
     flex: 1 1 30%;
   }
+
 
 }
 
@@ -146,15 +159,18 @@
   .inner_mid {
     display: inherit;
     flex-direction: column;
-    button {
-      background: $brand-one;
-      padding: 0.5rem;
-      border-radius: 60%;
-      &:before {
-        color: $white;
+    .social {
+      margin-bottom: 1rem;
+      button {
+        background: $brand-one;
+        padding: 0.5rem;
+        border-radius: 60%;
+        &:before {
+          color: $white;
+        }
       }
     }
-    hr{
+    hr {
       margin: auto auto 0 auto;
       width: 90%;
       justify-self: center;
