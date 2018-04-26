@@ -9,5 +9,5 @@ Please download the site, ensure you have node.js & gulp installed, then using t
 The Styles are in SASS and require a preprocessor, the gulp file included handles this, if using any other method, ensure auto prefixer is applied to support legacy broswers
 
 ### Hosted on github pages
-Template site: (HTML Prototype)(https://bluemonkey1130.github.io/5050/){: target="_blank"}
-Based on : [XD Prototype](https://xd.adobe.com/view/0a6f8619-b032-4805-47aa-d4124d8b24d3-7c5e/){: target="_blank"}
+Template site: [HTML Prototype](https://bluemonkey1130.github.io/5050/)   
+Based on : [XD Prototype](https://xd.adobe.com/view/0a6f8619-b032-4805-47aa-d4124d8b24d3-7c5e/)  
