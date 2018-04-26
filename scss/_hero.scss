@@ -13,7 +13,6 @@
   align-items: flex-start;
   flex-direction: column;
   flex: 1 1 60%;
-  background:  url("../img/hero.jpg") center center / cover no-repeat;
   background-blend-mode: multiply;
   *{
     width: 100%;
@@ -23,7 +22,8 @@
     margin-bottom: 0;
 
   }
-  h3 {
+  h4 {
     margin-bottom: 0;
+    text-transform: inherit;
   }
 }

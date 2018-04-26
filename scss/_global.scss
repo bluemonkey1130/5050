@@ -75,7 +75,7 @@ section.main {
   .top_row {
     width: 100%;
     display: inline-flex;
-    min-height: 500px;
+    min-height: 600px;
     @media only screen and (min-width: 1000px) {
       height: 75vh;
 
@@ -88,7 +88,7 @@ section.main {
   .bottom_row {
     width: 100%;
     display: inline-flex;
-    min-height: 100px;
+    min-height: 150px;
     padding: 0;
     flex-direction: column;
     flex-wrap: wrap;
@@ -118,7 +118,7 @@ footer {
     border-left: 5px solid $brand-one;
     border-bottom: 1px solid $brand-one;
     padding-left: 1rem;
-    box-sizing: content-box;
+    box-sizing: border-box;
     overflow-x: scroll;
     * {
       color: $black;
@@ -150,3 +150,5 @@ footer {
     }
   }
 }
+
+

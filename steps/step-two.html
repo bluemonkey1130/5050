@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.min.css">
+</head>
+<body>
+
+
+<section class="logo">
+    <div class="inner_wrapper">
+        <div class="block">
+            <a href="../index.html">
+                <img src="../img/logo-newcastle.png">
+            </a>
+        </div>
+    </div>
+</section>
+<section class="main">
+    <div class="inner_wrapper top_row">
+        <!--SIDE-BAR.SCSS-->
+        <header class="block side_bar">
+            <nav>
+                <ul>
+                    <li class="fas fa-home"><a href="">Home</a></li>
+                    <li class="fas fa-trophy"><a href="">Winners</a></li>
+                    <li class="fas fa-sign-in-alt"><a href="">Login</a></li>
+                    <li class="fas fa-user-plus"><a href="">Register</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--HERO.SCSS-->
+        <div class="block hero"
+             style="  background:linear-gradient(to bottom, rgba(32,124,202,0) 0%,rgba(16,62,101,0) 50%,rgba(8,30,48,0.3) 76%,rgba(0,0,0,0.5) 100%),  url('../img/hero.jpg') center center / cover no-repeat; "
+
+        >
+            <h1>WIND CASH PRIZES AND SUPPORT THE LOTTERY</h1>
+            <h4>And more importantly much needed support for newcastle United Foundation</h4>
+
+        </div>
+        <!--DRAW-STYLES.SCSS-->
+        <div class="block draw step-two">
+            <form>
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <legend><h4><strong>Personal</strong> Information</h4></legend>
+
+                    <!-- First Name input-->
+                    <div class="group half">
+                        <input id="textinput" name="textinput" type="text" placeholder="First Name"
+                               class="inputMaterial" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class=" control-label" for="textinput">First Name</label>
+                        <span class="visuallyhidden">Please enter your first name</span>
+                    </div>
+                    <!-- Last Name input-->
+                    <div class="group half">
+                        <input id="textinput" name="textinput" type="text" placeholder="Last Name"
+                               class="inputMaterial" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class=" control-label" for="textinput">Last Name</label>
+                        <span class="visuallyhidden">Please enter your last name</span>
+                    </div>
+                    <!-- Email input-->
+                    <div class="group">
+                        <input id="email-one" name="email-one" type="text" placeholder="Email"
+                               class="inputMaterial" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class=" control-label" for="email-one">Email</label>
+                        <span class="visuallyhidden">Please Enter your email address</span>
+                    </div>
+                    <!-- Email Confirm input-->
+                    <div class="group">
+                        <input id="email-two" name="email-two" type="text" placeholder="Email Confirm"
+                               class="inputMaterial" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class=" control-label" for="email-two">Email Confirm</label>
+                        <span class="visuallyhidden">Please confirm your email</span>
+                    </div>
+                    <!-- Phone Number input-->
+                    <div class="group">
+                        <input id="mobile-number" name="mobile-number" type="text" placeholder="Mobile Phone"
+                               class="inputMaterial" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class=" control-label" for="mobile-number">Mobile Phone</label>
+                        <span class="visuallyhidden">Please enter your mobile number</span>
+                    </div>
+                    <!-- Street Address input-->
+                    <div class="group">
+                        <input id="street-address" name="street-address" type="text" placeholder="Street Address"
+                               class="inputMaterial" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class=" control-label" for="street-address">Street Address</label>
+                        <span class="visuallyhidden">Please enter your Address</span>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="group">
+                        <input id="city" name="city" type="text" placeholder="City" class="inputMaterial"
+                               required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class=" control-label" for="city">City</label>
+                        <span class="visuallyhidden">Please enter your city </span>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="group">
+                        <input id="postcode" name="postcode" type="text" placeholder="Post Code" required=""
+                               class="inputMaterial">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label class=" control-label" for="postcode">Post Code</label>
+                        <span class="visuallyhidden">Please enter your postcode</span>
+                    </div>
+
+                    <!-- AGE checkbox -->
+                    <div class="group no-style">
+                        <input type="checkbox" id="age-check" required="">
+                        <label for="age-check">I am at least 16 years of age</label>
+                        <p class="visuallyhidden">Please enter your age</p>
+                    </div>
+
+                    <!-- TERMS checkbox -->
+                    <div class="group no-style">
+                        <input type="checkbox" id="terms-conditions" required="">
+                        <label for="terms-conditions">Terms &amp; Conditions</label>
+                        <p class="visuallyhidden">Please indicate your have read and accepted the terms</p>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="group">
+                        <button id="confirm" name="confirm" class="button-primary">Next</button>
+                        <a class="button-primary" href="step-three.html">NEXT</a>
+                    </div>
+
+                </fieldset>
+            </form>
+
+
+        </div>
+    </div>
+    <div class="inner_wrapper bottom_row">
+        <!--NAV BLOCKS.SCSS-->
+        <div class="block sub-page">
+            <h4><strong>Newcastle United&nbsp;&gt;</strong></h4>
+        </div>
+        <div class="block sub-page">
+            <h4><strong>How the draw works&nbsp;&gt;</strong></h4>
+        </div>
+        <div class="block sub-page">
+            <h4><strong>Previous Winning Numbers&nbsp;&gt;</strong></h4>
+        </div>
+        <div class="block sub-page">
+            <h4><strong>Benifits of subscribing&nbsp;&gt;</strong></h4>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="inner_wrapper ticker">
+        <div class="block">
+            <h6>Mr A Other Won £345.06</h6>
+        </div>
+        <div class="block">
+            <h6>Mr A Other Won £345.06</h6>
+        </div>
+        <div class="block">
+            <h6>Mr A Other Won £345.06</h6>
+        </div>
+        <div class="block">
+            <h6>Mr A Other Won £345.06</h6>
+        </div>
+        <div class="block">
+            <h6>Mr A Other Won £345.06</h6>
+        </div>
+        <div class="block">
+            <h6>Mr A Other Won £345.06</h6>
+        </div>
+        <div class="block">
+            <h6>Mr A Other Won £345.06</h6>
+        </div>
+    </div>
+    <div class="inner_wrapper footer-nav">
+        <nav class="block">
+            <ul>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Refund Policy</a></li>
+                <li><a href="">Responsible Gambling</a></li>
+            </ul>
+        </nav>
+        <div class="block copy">
+            <h6>&copy; Copyright 2018 All Rights Reserved 5050 Central Ltd</h6>
+        </div>
+    </div>
+
+</footer>
+
+
+<script src="../js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+<script src="..js/vendor/jquery.steps.min.js"></script>
+<script src="..js/plugins.js"></script>
+<script src="..js/main.js"></script>
+
+</body>
+</html>

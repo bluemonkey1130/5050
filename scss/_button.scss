@@ -1,7 +1,7 @@
 .button-primary, input[type=submit] {
   padding: 10px 20px;
   display: inline-block;
-  font-size: 1em;
+  font-size: $paragraph-size;
   font-weight: 900;
   text-transform: uppercase;
   cursor: pointer;
@@ -67,6 +67,7 @@ input[type=number] {
   background: $grey;
   margin: 0.5rem 0 0 0;
   border: none;
+  font-size: $paragraph-size;
   &:hover {
     background-color: $brand-one;
     color: $white;

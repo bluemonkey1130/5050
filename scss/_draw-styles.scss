@@ -6,9 +6,12 @@
   display: inline-flex;
   justify-content: space-between;
   flex: 1 1 30%;
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+  }
 }
 
-.block.step-one {
+.block.home {
   @media only screen and (max-width: 1000px) {
     width: 100%;
     flex-direction: row;
@@ -80,7 +83,8 @@
   }
 }
 
-.block.step-two {
+.block.step-one {
+
   & >div{
     padding: 1rem;
     display: inherit;
@@ -92,10 +96,23 @@
   .inner_top {
   }
   .inner_mid {
+    h2{
+      color: $brand-one;
+    }
   }
   .inner_bottom {
+    justify-content: flex-start;
   }
+}
+.block.step-two {
+
 }
 
 
 
+.block.step-three{
+  & >div{
+    flex: 1 1 30%;
+  }
+
+}

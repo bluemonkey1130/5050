@@ -2,9 +2,6 @@
 
 
 
-
-
-
     var form = $("#contact");
     form.validate({
         errorPlacement: function errorPlacement(error, element) { element.before(error); },
