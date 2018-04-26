@@ -10,4 +10,5 @@ The Styles are in SASS and require a preprocessor, the gulp file included handle
 
 ### Hosted on github pages
 Template site: [HTML Prototype](https://bluemonkey1130.github.io/5050/)   
-Based on : [XD Prototype](https://xd.adobe.com/view/0a6f8619-b032-4805-47aa-d4124d8b24d3-7c5e/)  
+Desktop : [XD Prototype](https://xd.adobe.com/view/0a6f8619-b032-4805-47aa-d4124d8b24d3-7c5e/)  
+Mobile : [XD Prototype](https://xd.adobe.com/view/9c77c23f-6cab-4497-76f9-f51248099a73-ea46/)
