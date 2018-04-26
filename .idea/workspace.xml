@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="894c8ce1-43ad-4d9d-9b1d-a595fbbc44f9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/scss/_main-pages.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/_secondary-pages.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sub-pages/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_draw-styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_draw-styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/_side-bar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_side-bar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/steps/step-one.html" beforeDir="false" afterPath="$PROJECT_DIR$/steps/step-one.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/steps/step-three.html" beforeDir="false" afterPath="$PROJECT_DIR$/steps/step-three.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/steps/step-two.html" beforeDir="false" afterPath="$PROJECT_DIR$/steps/step-two.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +19,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="101" column="43" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
+                <state relative-caret-position="344">
+                  <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="e#2170#2176#0" expanded="true" />
@@ -46,8 +32,8 @@
                     <element signature="e#3058#3062#0" expanded="true" />
                     <element signature="e#2356#2362#0" expanded="true" />
                     <element signature="e#3180#3184#0" expanded="true" />
-                    <element signature="e#3811#3817#0" expanded="true" />
-                    <element signature="e#3817#3821#0" expanded="true" />
+                    <element signature="e#3908#3914#0" expanded="true" />
+                    <element signature="e#3914#3918#0" expanded="true" />
                     <element signature="e#4166#4172#1" expanded="true" />
                   </folding>
                 </state>
@@ -260,8 +246,8 @@
         <option value="$PROJECT_DIR$/scss/_main-pages.scss" />
         <option value="$PROJECT_DIR$/scss/_draw-styles.scss" />
         <option value="$PROJECT_DIR$/sub-pages/account.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scss/_global.scss" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -385,12 +371,12 @@
       <workItem from="1524127522363" duration="3396000" />
       <workItem from="1524239059299" duration="3041000" />
       <workItem from="1524471594877" duration="6597000" />
-      <workItem from="1524670639501" duration="38381000" />
+      <workItem from="1524670639501" duration="38887000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51415000" />
+    <option name="totallyTimeSpent" value="51921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3840" y="22" width="1920" height="1178" extended-state="6" />
@@ -462,8 +448,8 @@
             <element signature="e#3058#3062#0" expanded="true" />
             <element signature="e#2356#2362#0" expanded="true" />
             <element signature="e#3180#3184#0" expanded="true" />
-            <element signature="e#3811#3817#0" expanded="true" />
-            <element signature="e#3817#3821#0" expanded="true" />
+            <element signature="e#3908#3914#0" expanded="true" />
+            <element signature="e#3914#3918#0" expanded="true" />
             <element signature="e#4166#4172#1" expanded="true" />
           </folding>
         </state>
@@ -533,8 +519,8 @@
             <element signature="e#3058#3062#0" expanded="true" />
             <element signature="e#2356#2362#0" expanded="true" />
             <element signature="e#3180#3184#0" expanded="true" />
-            <element signature="e#3811#3817#0" expanded="true" />
-            <element signature="e#3817#3821#0" expanded="true" />
+            <element signature="e#3908#3914#0" expanded="true" />
+            <element signature="e#3914#3918#0" expanded="true" />
             <element signature="e#4166#4172#1" expanded="true" />
           </folding>
         </state>
@@ -785,10 +771,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="101" column="43" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
+        <state relative-caret-position="344">
+          <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#2170#2176#0" expanded="true" />
@@ -800,17 +793,10 @@
             <element signature="e#3058#3062#0" expanded="true" />
             <element signature="e#2356#2362#0" expanded="true" />
             <element signature="e#3180#3184#0" expanded="true" />
-            <element signature="e#3811#3817#0" expanded="true" />
-            <element signature="e#3817#3821#0" expanded="true" />
+            <element signature="e#3908#3914#0" expanded="true" />
+            <element signature="e#3914#3918#0" expanded="true" />
             <element signature="e#4166#4172#1" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="89" column="18" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
         </state>
       </provider>
     </entry>
