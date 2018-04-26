@@ -271,6 +271,12 @@ body {
       display: inline-block; }
       body section.logo .inner_wrapper .block {
         max-width: 250px; }
+    @media only screen and (max-width: 750px) {
+      body section.logo {
+        max-width: 200px; } }
+    @media only screen and (max-width: 600px) {
+      body section.logo {
+        max-width: 150px; } }
 
 footer {
   height: 10vh; }
@@ -578,6 +584,12 @@ h1 {
   h1 strong {
     font-size: 3rem;
     font-weight: 800; }
+  @media only screen and (max-width: 1000px) {
+    h1 {
+      font-size: 2.0833333333rem; } }
+  @media only screen and (max-width: 750px) {
+    h1 {
+      font-size: 1.6666666667rem; } }
 
 h2 {
   font-size: 1.7857142857rem;
@@ -648,6 +660,18 @@ ul, ol {
   ul ul, ul ol, ol ul, ol ol {
     margin-top: 0; }
 
+button {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+  button:active {
+    outline: none; }
+  button:hover {
+    outline: none; }
+
 .button-primary, input[type=submit] {
   padding: 10px 20px;
   display: inline-block;
@@ -666,10 +690,12 @@ ul, ol {
   color: #ffffff; }
   .button-primary:hover, input[type=submit]:hover {
     background-color: #A1DAF8;
-    color: #ffffff; }
+    color: #ffffff;
+    outline: none; }
   .button-primary:active, input[type=submit]:active {
     background-color: #A1DAF8;
-    color: #ffffff; }
+    color: #ffffff;
+    outline: none; }
   .button-primary:focus, input[type=submit]:focus {
     background-color: #F7A700;
     color: #ffffff;
@@ -767,6 +793,11 @@ input[type=number] {
       width: 50%;
       order: 3;
       border: 1px solid #1B9FD6; } }
+  @media only screen and (max-width: 600px) {
+    .block.home .inner_top {
+      flex: 1 1 100%;
+      width: 100%;
+      order: 1; } }
 .block.home .inner_mid {
   flex: 1 1 45%;
   background: linear-gradient(to right, rgba(27, 159, 214, 0.8) 0%, rgba(27, 159, 214, 0.8) 100%), url("../img/hero.jpg") center center/cover no-repeat; }
@@ -777,14 +808,15 @@ input[type=number] {
     max-width: 100px; }
   .block.home .inner_mid .verses p, .block.home .inner_mid .verses h1, .block.home .inner_mid .verses h2, .block.home .inner_mid .verses h3, .block.home .inner_mid .verses h4, .block.home .inner_mid .verses h5, .block.home .inner_mid .verses h6 {
     display: inline-block; }
-  @media only screen and (max-width: 600px) {
-    .block.home .inner_mid .verses {
-      display: inherit;
-      flex-direction: column; } }
   @media only screen and (max-width: 1000px) {
     .block.home .inner_mid {
       flex: 1 1 50%;
       width: 50%;
+      order: 2; } }
+  @media only screen and (max-width: 600px) {
+    .block.home .inner_mid {
+      flex: 1 1 100%;
+      width: 100%;
       order: 2; } }
 .block.home .inner_bottom {
   flex: 1 1 30%;
@@ -796,6 +828,9 @@ input[type=number] {
       flex: 1 1 100%;
       width: 100%;
       order: 1; } }
+  @media only screen and (max-width: 600px) {
+    .block.home .inner_bottom {
+      order: 3; } }
 
 .block.step-one > div {
   display: inherit;
@@ -867,9 +902,6 @@ input[type=number] {
     color: #ffffff; }
   .block.hero h1 {
     margin-bottom: 0; }
-    @media only screen and (max-width: 1000px) {
-      .block.hero h1 {
-        font-size: 2.0833333333rem; } }
   .block.hero h4 {
     margin-bottom: 0;
     text-transform: inherit; }

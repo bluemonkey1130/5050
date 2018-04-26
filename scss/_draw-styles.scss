@@ -58,6 +58,11 @@
       order: 3;
       border: 1px solid $brand-one;
     }
+    @media only screen and (max-width: 600px) {
+      flex: 1 1 100%;
+      width: 100%;
+      order: 1;
+    }
   }
   .inner_mid {
     flex: 1 1 45%;
@@ -75,14 +80,15 @@
       p, h1, h2, h3, h4, h5, h6 {
         display: inline-block;
       }
-      @media only screen and (max-width: 600px) {
-        display: inherit;
-        flex-direction: column;
-      }
     }
     @media only screen and (max-width: 1000px) {
       flex: 1 1 50%;
       width: 50%;
+      order: 2;
+    }
+    @media only screen and (max-width: 600px) {
+      flex: 1 1 100%;
+      width: 100%;
       order: 2;
     }
 
@@ -97,6 +103,10 @@
       flex: 1 1 100%;
       width: 100%;
       order: 1;
+    }
+    @media only screen and (max-width: 600px) {
+      order: 3;
+
     }
   }
 }
@@ -134,6 +144,7 @@
   }
 }
 
+//STEP TWO
 .block.step-two {
   form{
     margin-top: 0.5rem;
@@ -141,6 +152,7 @@
   }
 }
 
+//STEP THREE
 .block.step-three {
   & > div {
     flex: 1 1 30%;
@@ -149,6 +161,7 @@
 
 }
 
+//STEP FOUR
 .block.step-four {
   & > div {
     flex: 1 1 30%;

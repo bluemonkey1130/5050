@@ -3,6 +3,7 @@
   --true-black: #000000;
 }
 
+
 $black: #1F1F1F;
 $white: #fffff;
 $true-black: #000000;
@@ -59,6 +60,12 @@ body {
       .block {
         max-width: 250px;
       }
+    }
+    @media only screen and (max-width: 750px) {
+      max-width: 200px;
+    }
+    @media only screen and (max-width: 600px) {
+      max-width: 150px;
     }
   }
 }
