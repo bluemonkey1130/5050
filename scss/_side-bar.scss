@@ -1,7 +1,6 @@
-.block.side_bar {
+header.block.side_bar {
   padding: 11rem 1rem 0 1rem;
   width: 10%;
-  flex: 1 1 10%;
   ul {
     padding: 0;
     margin: 0;
@@ -16,6 +15,9 @@
         color: $brand-one;
       }
     }
+  }
+  @media only screen and (min-width: 1000px) {
+    flex: 1 1 10%;
   }
   @media only screen and (max-width: 1000px) {
     padding: 0 1rem 0 15rem;

@@ -63,50 +63,6 @@ body {
   }
 }
 
-section.main {
-  background-color: $white;
-  display: inline-flex;
-  flex-direction: column;
-  width: 100%;
-
-}
-
-section.main {
-  .top_row {
-    width: 100%;
-    display: inline-flex;
-    min-height: 600px;
-    @media only screen and (min-width: 1000px) {
-      height: 75vh;
-
-    }
-    @media only screen and (max-width: 1000px) {
-      flex-direction: column
-    }
-  }
-
-  .bottom_row {
-    width: 100%;
-    display: inline-flex;
-    min-height: 150px;
-    padding: 0;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    @media only screen and (min-width: 750px) {
-      flex-direction: row;
-
-    }
-    @media only screen and (min-width: 1000px) {
-      height: 15vh;
-      //padding-left: 120px;
-      flex-direction: row;
-      flex-wrap: nowrap;
-
-
-    }
-  }
-}
 
 footer {
   height: 10vh;
@@ -119,7 +75,6 @@ footer {
     border-bottom: 1px solid $brand-one;
     padding-left: 1rem;
     box-sizing: border-box;
-    overflow-x: scroll;
     * {
       color: $black;
     }
@@ -132,11 +87,10 @@ footer {
       min-width: 120px;
       h6 {
         margin: 0;
-        padding-right: 20px;
+        padding: 0 1rem;
         border-right: 2px solid $black;
       }
     }
-
   }
   .inner_wrapper.footer-nav {
     background-color: $white;
@@ -152,3 +106,57 @@ footer {
 }
 
 
+
+.ui.steps{
+  display: inline-flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  margin: 1em 0;
+  box-shadow: none;
+  line-height: 1.14285714em;
+  border-radius: .28571429rem;
+  border: 1px solid rgba(34,36,38,.15);
+  cursor: auto;
+  background: #f3f4f5;
+  padding: 1rem;
+  text-align: left;
+}
+
+.ticker {
+  overflow: hidden;
+  position: relative;
+}
+.ticker .block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  transform:translateX(100%);
+  /* Apply animation to this element */
+  animation: example1 30s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+  0%   {
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%);
+  }
+}
