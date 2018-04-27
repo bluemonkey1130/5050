@@ -278,6 +278,43 @@ body {
       body section.logo {
         max-width: 150px; } }
 
+.bottom_row {
+  width: 100%;
+  display: inline-flex;
+  min-height: 150px;
+  padding: 0;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 1000px) {
+    .bottom_row .block {
+      flex: 1 1 49%;
+      width: 49%;
+      margin-bottom: 0.5rem; }
+      .bottom_row .block:nth-child(1) {
+        margin-right: 0.25rem; }
+      .bottom_row .block:nth-child(2) {
+        margin-left: 0.25rem; }
+      .bottom_row .block:nth-child(3) {
+        margin-right: 0.25rem; }
+      .bottom_row .block:nth-child(4) {
+        margin-left: 0.25rem; } }
+  @media only screen and (max-width: 750px) {
+    .bottom_row .block {
+      flex: 1 1 100%;
+      width: 100%;
+      margin-bottom: 0.5rem; }
+      .bottom_row .block:nth-child(1n) {
+        margin: 0;
+        margin-bottom: 0.5rem; } }
+  @media only screen and (min-width: 750px) {
+    .bottom_row {
+      flex-direction: row; } }
+  @media only screen and (min-width: 1000px) {
+    .bottom_row {
+      height: 15vh;
+      flex-direction: row;
+      flex-wrap: nowrap; } }
+
 footer {
   height: 10vh; }
   footer .inner_wrapper.ticker {
@@ -478,42 +515,6 @@ section.main {
     @media only screen and (max-width: 1000px) {
       section.main .top_row {
         flex-direction: column; } }
-  section.main .bottom_row {
-    width: 100%;
-    display: inline-flex;
-    min-height: 150px;
-    padding: 0;
-    flex-direction: column;
-    flex-wrap: wrap; }
-    @media only screen and (max-width: 1000px) {
-      section.main .bottom_row .block {
-        flex: 1 1 49%;
-        width: 49%;
-        margin-bottom: 0.5rem; }
-        section.main .bottom_row .block:nth-child(1) {
-          margin-right: 0.25rem; }
-        section.main .bottom_row .block:nth-child(2) {
-          margin-left: 0.25rem; }
-        section.main .bottom_row .block:nth-child(3) {
-          margin-right: 0.25rem; }
-        section.main .bottom_row .block:nth-child(4) {
-          margin-left: 0.25rem; } }
-    @media only screen and (max-width: 750px) {
-      section.main .bottom_row .block {
-        flex: 1 1 100%;
-        width: 100%;
-        margin-bottom: 0.5rem; }
-        section.main .bottom_row .block:nth-child(1n) {
-          margin: 0;
-          margin-bottom: 0.5rem; } }
-    @media only screen and (min-width: 750px) {
-      section.main .bottom_row {
-        flex-direction: row; } }
-    @media only screen and (min-width: 1000px) {
-      section.main .bottom_row {
-        height: 15vh;
-        flex-direction: row;
-        flex-wrap: nowrap; } }
 
 section.secondary {
   background-color: #fffff;
@@ -541,21 +542,15 @@ section.secondary {
       @media only screen and (min-width: 1000px) {
         section.secondary .top_row .block.content {
           padding: 12% 5%; } }
-  section.secondary .bottom_row {
-    width: 100%;
-    display: inline-flex;
-    min-height: 150px;
-    padding: 0;
-    flex-direction: column;
-    flex-wrap: wrap; }
-    @media only screen and (min-width: 750px) {
-      section.secondary .bottom_row {
-        flex-direction: row; } }
-    @media only screen and (min-width: 1000px) {
-      section.secondary .bottom_row {
-        height: 15vh;
-        flex-direction: row;
-        flex-wrap: nowrap; } }
+      @media only screen and (max-width: 1000px) {
+        section.secondary .top_row .block.content {
+          padding-top: 7.5rem; } }
+      @media only screen and (max-width: 750px) {
+        section.secondary .top_row .block.content {
+          padding-top: 3.5rem; } }
+      @media only screen and (max-width: 600px) {
+        section.secondary .top_row .block.content {
+          padding-top: 2.5rem; } }
 
 /*------------------------------------*\
     # Simple Typography Settings
@@ -995,7 +990,7 @@ header.block.side_bar {
   z-index: 99999999;
   top: 0;
   right: 0;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95);
   overflow-x: hidden;
   transition: 0.5s; }
 
