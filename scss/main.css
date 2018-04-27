@@ -851,8 +851,14 @@ input[type=number] {
 .block.step-two form {
   margin-top: 0.5rem; }
 
-.block.step-three > div {
-  flex: 1 1 30%; }
+.block.step-three .embed-container {
+  flex: 1 1 80%; }
+  @media only screen and (max-width: 1000px) {
+    .block.step-three .embed-container {
+      min-height: 700px; } }
+.block.step-three .inner {
+  flex: 1 1 20%;
+  border-top: 1px solid #1B9FD6; }
 
 .block.step-four > div {
   flex: 1 1 30%; }
@@ -890,7 +896,7 @@ input[type=number] {
       padding: 9rem 6rem 2rem 2rem; } }
   @media only screen and (max-width: 600px) {
     .block.hero {
-      padding: 2rem 2rem 2rem 6rem;
+      padding: 2rem 2rem 2rem 2rem;
       text-align: right; } }
   .block.hero * {
     width: 100%;
